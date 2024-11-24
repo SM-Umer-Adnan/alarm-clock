@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "clock",
+    "slug": "clock",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "clock",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "androidStatusBar": {
+      "translucent": true
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "useNextNotificationsApi": true,
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "package": "com.anonymous.clock"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/clock.png",
+          "color": "#ffffff",
+          "sounds": [
+            "./assets/ringtone.wav"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "959ad164-b850-4c98-ae36-456bb4ae688c"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/959ad164-b850-4c98-ae36-456bb4ae688c"
+    }
+  }
+}
+
